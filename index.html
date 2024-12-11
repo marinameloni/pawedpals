@@ -21,9 +21,12 @@
     <header>
         <h1>Pawed Pals</h1>
         <nav>
-            <a href="#about">À Propos</a>
-            <a href="http://pawed-pals.petit-hugommi1.fr/touches">Tutoriel</a>
-            <button><a href="http://pawed-pals.petit-hugommi1.fr/">Jouer</a></button>
+            <div class="menu-items">
+                <a href="#about">À Propos</a>
+                <a href="http://pawed-pals.petit-hugommi1.fr/touches">Tutoriel</a>
+                <button><a href="http://pawed-pals.petit-hugommi1.fr/">Jouer</a></button>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
         </nav>
     </header>
 
@@ -80,6 +83,13 @@
     <footer>
         &copy; 2024 Pawed Pals. Tous droits réservés.
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menuItems = document.querySelector('.menu-items');
+            menuItems.classList.toggle('show');
+        }
+    </script>
 
 </body>
 
